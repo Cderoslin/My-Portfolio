@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-	<nav id="top" class="main-nav">
-		<div class="container">
-			<div class="name">home</div>
-			<ul class="nav">
-					<li>
-						<a href="#about">about me</a>
-					</li>
-					<li>
-						<a href="#portfolio">portfolio</a>
-					</li>
-					<li>
-						<a href="#contact">contact</a>  
-					</li>
-			</ul>
-		</div>  
-	</nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cesaire</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="top" class="main-nav">
+            <div class="container">
+                <div class="name">Home</div>
+                <ul class="nav">
+                        <li>
+                            <a href="">about</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">work</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>  
+                        </li>
+                </ul>
+            </div>  
+        </nav>
+        <header class="header">
+            <div class="container">
+                <div class="header-img">
+                    <img src="img/proimg.png" alt="profile picture">
+                    <h1>
+                        Hi, I'm Cesaire
+                    </h1>
+                    <p>
+                        I am a Full-stack <span>Web Developer.</span> 
+                    </p>
+                </div>
+            </div>
+        </header>
 
-	<header class="header">
-		<div class="container">
-			<div class="header-img">
-				<p>
-					Hi, my name is Cesaire and I am a Full-Stack Web developer.
-				</p>
-				<img src="img/proimg.png" alt="profile picture">
-			</div>
-		</div>
-	</header>
-
-	<div class="service">
-		<div class="title">
-			<h2>Portfolio</h2>
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<i class="fas fa-bars"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<i class="far fa-user"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<i class="far fa-bell"></i>
-				<h5>Web Development</h5>
-				<div class="pra">
-					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="#">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer>
-		<p>Tahmid Ahmed</p>
-		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
-		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
-		</div>
-	</footer>
-
-</body>
+        <section>
+            <div class="container">
+                <h2 id="portfolio">Portfolio</h2>
+                <div class="boxes">
+                    <div class="box item1">
+                        <h3>Random Quote Generator</h3>
+                        <p>
+                            This project generates random quotes and the author of the quote.
+                        </p>
+                    </div>
+                    <div class="box item2">
+                        <h3>Newsletter</h3>
+                        <p>
+                            This project is a front page of a newsletter.
+                        </p>
+                    </div>
+                    <div class="box item3">
+                        <h3>Project Name</h3>
+                        <p>
+                            coming soon.
+                        </p>
+                    </div>
+                    <div class="box item4">
+                        <h3>Project Name</h3>
+                        <p>
+                            coming soon.
+                        </p>
+                    </div>
+                    <div class="box item5">
+                        <h3>Project Names</h3>
+                        <p>
+                            coming soon.
+                        </p>
+                    </div>
+                    <div class="box item6">
+                        <h3>Project Name</h3>
+                        <p>
+                            coming soon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact-container">
+            <h2 id="contact">let's chat!</h2>
+            <p>
+                If you're interested in chatting or want
+                more information about what I've been
+                working on, I'd love to hear from you!
+            </p>
+            <p> Email <span class="email"> cdoreus@icloud.com </span></p>
+        </div>
+        <nav id="botton-nav" class="bottom-nav">
+            <div class="bottom-container">
+                <ul class="list-nav">
+                        <li class="bottom-list">
+                            <a href="#top">back to top</a>  
+                        </li>
+                </ul>
+            </div>  
+        </nav>
+        
+    </body>
 </html>
