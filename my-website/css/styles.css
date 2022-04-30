@@ -192,21 +192,16 @@ section p {
 		padding-right: 15px;
 	}
 
-	.row {
+	.boxes {
 		display: flex;
-	  }
-	  
-	  .column {
-		flex: 50%;
-	  }
-
-	.container .boxes {
-		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 
-	.boxes .box  {
-        flex: 50%;
-    }
+	.box {
+		flex: 33.33333%;
+	}
 
 	.contact-container p {
 		padding: 5px 18px;
