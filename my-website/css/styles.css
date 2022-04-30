@@ -70,10 +70,6 @@ ul {
 }
 
 section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background: linear-gradient(145deg, #1e2024, #23272b);
 	margin-top: 45px;
 	padding-top: 45px;
