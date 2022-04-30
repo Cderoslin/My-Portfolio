@@ -59,7 +59,7 @@ ul {
 	width: 100%;
 	height: auto;
 	margin-bottom: 25px;
-	background-image: url('/img/Project2.jpg');
+	background-image: url('/my-website/img/Project2.jpg');
 	border-radius: 5%;
 	border: #212e60 solid 5px;
 
@@ -100,11 +100,8 @@ section {
 
 .boxes .box {
 	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	align-items: center;
-	flex: 1 1 275px;
-	display: flex;
+	justify-content: center;
+	text-align: center;
 	flex-wrap: wrap;
 	box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 	margin: 25px 15px;
