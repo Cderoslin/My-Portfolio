@@ -96,6 +96,7 @@ section {
 
 .boxes .box {
 	display: flex;
+	flex-direction:column
 	justify-content: center;
 	text-align: center;
 	flex-wrap: wrap;
