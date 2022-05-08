@@ -83,46 +83,21 @@ ul {
 	width: 100%;
 	background: #23272b;
 	border-left: 2px solid #fff;
-	animation: typing 3s steps(7) infinite;
+	/* animation: typing 4s steps(7) infinite; */
+	animation: typing 2s linear 4s infinite;
 }
 
 
 @keyframes typing {
-	21%, 79% {
-	  left: calc(100% + 5px);
+	40%, 25% {
+	  left: calc(100% + 10px);
 	}
-	100% {
+	85% {
 	  left: 0;
 	}
   }
 
-
-.header-item h1 {
-	position: relative;
-  }
-
-.header-item h1 span::after{
-	content: "";
-	position: absolute;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: #23272b;
-	border-left: 2px solid #fff;
-	animation: typing 3s steps(8) infinite;
-}
-
-
-@keyframes typing {
-	21%, 79% {
-	  left: calc(100% + 5px);
-	}
-	100% {
-	  left: 0;
-	}
-  }
-
-section {
+main {
 	background: linear-gradient(145deg, #1e2024, #23272b);
 	margin-top: 3rem;
 	padding-top: 3rem;
@@ -158,12 +133,12 @@ section {
 	padding: 30px;
 	border-radius: 5%;
 	width: 80%;
-	max-width: 85%;
+	max-width: 400px;
 	height: 280px;
 
 }
 
-section p {
+main p {
 	font-size: 17px;
 	text-align: center;
 	padding: 20px;
@@ -234,7 +209,7 @@ font-weight: 500;
 		border-radius: 5%;
 	} */
 
-	section {
+	main {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -318,15 +293,16 @@ font-weight: 500;
 		gap: 2rem;
 	}
 
-	section .boxes {
+	.boxes {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
+		flex-wrap: wrap;;
+		align-items: center;
 	}
 
 	.box {
 		flex: 33.33%;
+		width: 300px;
 	}
 
 	.contact-container p {
