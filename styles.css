@@ -13,6 +13,7 @@
   --background-color-2: #212529;
   --color-primary: #fff;
   --color-secondary: #46538a;
+  --color-grey-5: #2a2e35;
   --transition-primary: all .4s ease-in-out;
   --box-shadow-1: 10px 10px 19px #181a25, -10px -10px 19px #23242c;
   --box-shadow-2: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -228,5 +229,111 @@ main .boxes .box p {
   font-size: 1.1rem;
   text-align: center;
   padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  -webkit-transition: var(--transition-primary);
+  transition: var(--transition-primary);
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container .contact-content-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2rem;
+}
+
+.contact-container .contact-content-con .left-contact {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.contact-container .contact-content-con .left-contact h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.contact-container .contact-content-con .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.right-contact {
+  display: block;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  margin: 2rem;
+}
+
+.right-contact .input-control {
+  margin: 1.5rem 0;
+}
+
+.right-contact .input-control input, .right-contact .input-control textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .8rem 1.1rem;
+  margin: .5rem;
+  outline: none;
+  border: none;
+  color: var(--color-primary);
+  background-color: var(--color-grey-5);
+  width: 100%;
+  resize: none;
 }
 /*# sourceMappingURL=styles.css.map */

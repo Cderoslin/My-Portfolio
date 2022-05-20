@@ -13,6 +13,7 @@
     --background-color-2: #212529;
     --color-primary: #fff;
     --color-secondary: #46538a;
+    --color-grey-5: #2a2e35;
     --transition-primary: all .4s ease-in-out;
     --box-shadow-1: 10px 10px 19px #181a25, -10px -10px 19px #23242c;
     --box-shadow-2: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -158,6 +159,80 @@ nav {
             }
         }
     
+    }
+
+}
+
+.main-title {
+    text-align: center;
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 3.5rem;
+        font-weight: 700;
+        span{
+            color: var(--color-secondary);
+        }
+        .bg-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: var(--color-grey-5);
+            transition: var(--transition-primary);
+            z-index: -1;
+            transform: translate(-50%,-50%);
+            font-weight: 800;
+            font-size: 5rem;
+        }
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .contact-content-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        .left-contact {
+            flex: 2;
+            h4 {
+                margin-top: 1rem;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+            p {
+                margin: 1rem 0;
+                line-height: 2rem;
+            }
+         } 
+    }
+}
+
+.right-contact {
+    display:block;
+    flex: 3;
+    margin: 2rem;
+    .input-control {
+        margin: 1.5rem 0;
+        input, textarea {
+            border-radius: 30px;
+            font-weight: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            padding: .8rem 1.1rem;
+            margin: .5rem;
+            outline: none;
+            border: none;
+            color: var(--color-primary);
+            background-color: var(--color-grey-5);
+            width: 100%;
+            resize: none;
+        }
     }
 
 }
